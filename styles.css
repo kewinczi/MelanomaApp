@@ -5,6 +5,7 @@
     background-blend-mode: color;
     color: white;
     margin-bottom: 0;
+    animation: slideTitle 1s;
 }
 
 @keyframes slide {
@@ -27,10 +28,10 @@
     }
 }
 
-.title {
-    animation: slideTitle 1s;
-}
-
 .animate {
     animation: slide 0.5s linear;
+}
+
+#main {
+    animation: slideTitle 1s;
 }
