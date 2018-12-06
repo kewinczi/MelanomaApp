@@ -5,7 +5,7 @@
     background-blend-mode: color;
     color: white;
     margin-bottom: 0;
-    animation: slideTitle 1s;
+    animation: initialSlide 1s;
 }
 
 @keyframes slide {
@@ -19,7 +19,7 @@
     }
 }
 
-@keyframes slideTitle {
+@keyframes initialSlide {
     0% {
         transform: translateX(100%);
     }
@@ -32,6 +32,6 @@
     animation: slide 0.5s linear;
 }
 
-#main {
-    animation: slideTitle 1s;
+.animate-init {
+    animation: initialSlide 1s;
 }
