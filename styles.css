@@ -1,7 +1,36 @@
 .jumbotron {
-    background-image: url('http://bi.gazeta.pl/im/2d/0a/10/z16818989Q,Rak-skory-bardzo-czesto-rozwija-sie-przez-wiele-la.jpg');
-    background-color: rgba(32, 10, 10, 0.5);
-    background-blend-mode: darken;
+    background-image: url('./images/background.jpg');
+    background-position: center;
+    background-color: rgba(32, 10, 10, 0.4);
+    background-blend-mode: color;
     color: white;
     margin-bottom: 0;
+}
+
+@keyframes slide {
+    0% {
+        transform: translateY(3%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideTitle {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.title {
+    animation: slideTitle 1s;
+}
+
+.animate {
+    animation: slide 0.5s linear;
 }
